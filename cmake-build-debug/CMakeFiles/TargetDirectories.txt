@@ -1,0 +1,3 @@
+/Users/nikitakislov/CLionProjects/IZPproject22/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/nikitakislov/CLionProjects/IZPproject22/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/nikitakislov/CLionProjects/IZPproject22/cmake-build-debug/CMakeFiles/IZPproject22.dir

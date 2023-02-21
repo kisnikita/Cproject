@@ -1,0 +1,6 @@
+U dad mom son 1 2 3 4
+S dad 1
+R (1 2)
+C transitive 3
+C union 1 1
+C union 1 2
