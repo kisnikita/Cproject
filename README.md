@@ -36,53 +36,53 @@ The text file consists of three consecutive parts:
 - Commands over sets and Sessions-one or more lines starting with " C " and continuing with the command identifier.
 # Universe
 
-Elements of the <s>universe can be< / s><span style= "color: red">are</span> strings containing lowercase and uppercase letters of the English alphabet. The length of the string is a maximum of 30 characters. Universe elements must not contain command identifiers (see below) and the keywords true and false. All elements in sets and relations must belong to the universe. Example:
-<pre>U Apple Lemon Orange Banana Peach< / pre>
+Elements of the universe can be</s><span style= "color: red">are</span> strings containing lowercase and uppercase letters of the English alphabet. The length of the string is a maximum of 30 characters. Universe elements must not contain command identifiers (see below) and the keywords true and false. All elements in sets and relations must belong to the universe. Example:
+<pre>U Apple Lemon Orange Banana Peach</pre>
 
 # Sets
 
 Each set is defined on one line by a space separated by elements from the universe. The identifier of the set is the number of the line on which the set is defined (since the first line of the set is the universe, so the identifiers of the sets begin with the number 2). Set identifiers are used in operations (see below). Example of a set definition:
-<pre>with Apple Banana Peach< / pre>
+<pre>with Apple Banana Peach</pre>
 
 # Relations
 
 Each session is defined by an enumeration of pairs. The pair is bounded by parentheses, the first and second elements of the pair are separated by a space. Individual pairs are separated by a space. Example:
-<pre>R (Apple Banana) (Apple Peach) (Apple Apple)< / pre>
+<pre>R (Apple Banana) (Apple Peach) (Apple Apple)</pre>
 
 
 # Commands
 
 Each command is defined on one line, begins with the command identifier, and the command arguments are separated by a space (both from the identifier and among themselves). The arguments of the command are numeric identifiers of sets and relations (positive integers, the number 1 identifies the set of the universe). Example:
-<pre>C minus 1 2< / pre>
+<pre>C minus 1 2</pre>
 
 # Commands over sets
 
 The command works on sets, and its result is either a set (in which case it prints the set in the same format as expected in the input file, i.e. it starts with an " S " and continues with a space separated by elements) or a truth value (in which case it prints true or false on a separate line) or a natural number (which prints on a separate line).
 
-* < code>empty and< / code> - prints true or false depending on whether the set defined on line A is empty or non-empty.
-* <code>card A< / code> - prints the number of elements in the set A (defined on line A).
-* <code>complement A< / code> - prints the complement of set A.
-* <code>union a B< / code> - prints Union of Sets A and B.
-* < code>intersect a B</code> - prints the intersection of Sets A and B.
-* < code>minus A B< / code> - prints the difference of Sets A \ B.
-* <code>subseteq and B< / code> - prints true or false depending on whether Set A is a subset of Set B.
-* <code>subset A B< / code> - prints true or false if Set A is a proper subset of Set B.
-* < code>equals A B< / code> - prints true or false if the sets are equal.
+* <code>empty and</code> - prints true or false depending on whether the set defined on line A is empty or non-empty.
+* <code>card A</code> - prints the number of elements in the set A (defined on line A).
+* <code>complement A</code> - prints the complement of set A.
+* <code>union a B</code> - prints Union of Sets A and B.
+* <code>intersect a B</code> - prints the intersection of Sets A and B.
+* <code>minus A B</code> - prints the difference of Sets A \ B.
+* <code>subseteq and B</code> - prints true or false depending on whether Set A is a subset of Set B.
+* <code>subset A B</code> - prints true or false if Set A is a proper subset of Set B.
+* <code>equals A B</code> - prints true or false if the sets are equal.
 
-= = = Commands over Sessions ===
+=== Commands over Sessions ===
 
 The command works on Sessions, and its result is either a truth value (prints true or false), or a set (prints a set in the format as in the input file).
 
-* < code>reflexive R< / code> - prints true or false if the session is reflexive.
-* < code>symmetric R< / code> - prints true or false if the session is symmetric.
-* < code>antisymmetric R< / code> - prints true or false if the session is antisymmetric.
-* < code>transitive R< / code> - prints true or false if the session is transitive.
-* <code>function R< / code> - prints true or false If session R is a function.
-* < code>domain R< / code> - prints the definition scope of the R function (can also be applied to Sessions-the first elements of pairs).
-* <code>codomain R< / code> - prints the range of values of the function R (can also be applied to relations-the second elements of pairs).
-* <code>injectable R <span style="color:red" >A B</span></code> - prints true or false if R is injectable. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.< / span>
-* < code>surjective R <span style= "color:red">A B< / span>< / code> - prints true or false if R is surjective. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.< / span>
-* <code>bijective R <span style= "color:red">A B< / span>< / code> - prints true or false if R is bijective. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.< / span>
+* <code>reflexive R</code> - prints true or false if the session is reflexive.
+* <code>symmetric R</code> - prints true or false if the session is symmetric.
+* <code>antisymmetric R</code> - prints true or false if the session is antisymmetric.
+* <code>transitive R</code> - prints true or false if the session is transitive.
+* <code>function R</code> - prints true or false If session R is a function.
+* <code>domain R</code> - prints the definition scope of the R function (can also be applied to Sessions-the first elements of pairs).
+* <code>codomain R</code> - prints the range of values of the function R (can also be applied to relations-the second elements of pairs).
+* <code>injectable R <span style="color:red" >A B</span></code> - prints true or false if R is injectable. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.</span>
+* <code>surjective R <span style= "color:red">A B< / span></code> - prints true or false if R is surjective. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.</span>
+* <code>bijective R <span style= "color:red">A B< / span></code> - prints true or false if R is bijective. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.</span>
 
 === Implementation details ===
 
