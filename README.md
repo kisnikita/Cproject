@@ -42,7 +42,7 @@ Elements of the universe can be</s><span style= "color: red">are</span> strings 
 # Sets
 
 Each set is defined on one line by a space separated by elements from the universe. The identifier of the set is the number of the line on which the set is defined (since the first line of the set is the universe, so the identifiers of the sets begin with the number 2). Set identifiers are used in operations (see below). Example of a set definition:
-<pre>with Apple Banana Peach</pre>
+<pre>S Apple Banana Peach</pre>
 
 # Relations
 
@@ -81,8 +81,8 @@ The command works on Sessions, and its result is either a truth value (prints tr
 * <code>domain R</code> - prints the definition scope of the R function (can also be applied to Sessions-the first elements of pairs).
 * <code>codomain R</code> - prints the range of values of the function R (can also be applied to relations-the second elements of pairs).
 * <code>injectable R <span style="color:red" >A B</span></code> - prints true or false if R is injectable. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.</span>
-* <code>surjective R <span style= "color:red">A B< / span></code> - prints true or false if R is surjective. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.</span>
-* <code>bijective R <span style= "color:red">A B< / span></code> - prints true or false if R is bijective. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.</span>
+* <code>surjective R <span style= "color:red">A B</span></code> - prints true or false if R is surjective. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.</span>
+* <code>bijective R <span style= "color:red">A B</span></code> - prints true or false if R is bijective. <span style= "color:red">A and B are sets; a&#8712; A, b & #8712; B, (a, b)&#8712; R.</span>
 
 === Implementation details ===
 
